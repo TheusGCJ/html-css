@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+    # = id
+    . = class
+    : = psedo-class
+    :: = pseudo-element
+    > = clildren
+*/
+
+
+body{
+    font: normal bold 16px 'arial', helvetica, sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgba(31, 31, 221, 0.541);
+}
+
+a::after{
+    content: ' 🔗' ;
+} 
+
+.especial::before{
+    content: '🎬';
+}
+
+.especial::after{
+    content: '🔴';
+}
