@@ -17,7 +17,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgrey;
+    background-color: rgb(0, 0, 0);
     font: var(--font1);
 }
 
@@ -62,20 +62,40 @@ section{
 
 }
 
+section > p{    
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 section.imagem{
-    background-color: rgb(87, 86, 86);
+    background-color: rgb(0, 0, 0);
     color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#img01{
+    background-image: url(../pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+#img02{
+    background-image: url(../pacote-d012/imagens/background002.jpg);
+    background-position: right bottom;
 }
 
 section.imagem > p {
     display: inline-block;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.171);
     color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer{
