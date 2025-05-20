@@ -10,26 +10,42 @@
         }
 
         table{
-                  border-collapse: collapse; 
+                
+                 border-collapse: collapse;
+                 border: 1px solid black;
         }
        
-        td, th{
-            border: 1px solid black;      
+         .cor{
+            background-color: gray;
         }
+
+        td, th{
+             border: 1px solid black ;
+             width: 100px;
+             height: 30px;
+        }
+
+  
     </style>
 
 </head>
 <body>
     <table>
         <thead>
-            <tr>
-                <th scope="row">Área</th>
-                <th scope="row">Disciplinas</th>
-                <th scope="row">Notas</th>
-                <th scope="row">Nota 1</th>
-                <th scope="row">Nota 2</th>
-                <th scope="row">Médio</th>
+
+            
+            <tr class="cor">  
+                <th scope="col"  rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Médio</th>
             </tr>
+
+            <tr class="cor">
+                <th scope="col" colspan="1">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+
         </thead>
 
         <tbody>
@@ -62,8 +78,8 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <th colspan="4">Médias de Exatas</th>
+            <tr class="cor">
+                <th colspan="4" >Médias de Exatas</th>
                 <td>0.0</td>
             </tr>
             <tr>
@@ -81,7 +97,7 @@
                 <td>0.0</td>
             </tr>
 
-            <tr>
+            <tr class="cor">
                 <th colspan="4" scope="row">Médias de Humanas</th>
                 <td>0.0</td>
             </tr>
