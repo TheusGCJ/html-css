@@ -12,8 +12,11 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-   
-    <form action="ccadastro.php" autocomplete="on">
+    
+    <!--GET conteudo que não sensivel peso etc e tambem caso queira que a url seja compartilhada e so pode enviar 3.000,00 bytes-- post:: dados sensiveis ex: senha de bank etc e tambem envio de fotos e caso ultrapasse 3.000,00 bytes-->
+
+    <form action="ccadastro.php" method="get"            autocomplete="on"> 
+
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
       
@@ -21,6 +24,7 @@
             <input type="text" name="sobrenome" id="isobrenome"></p>
 
         <p><input type="submit" value="Enviar"></p>
+        
     </form>
     
 </body>
