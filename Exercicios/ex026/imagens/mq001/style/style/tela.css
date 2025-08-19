@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* tela */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    background-color: aliceblue;
+}
+
+header{
+    background-color: gray;
+}
+
+header > h1{
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: gray;
+}
+
+menu  ul {
+    background-color: gray;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
